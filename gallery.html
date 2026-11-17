@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore New York through photos, an audio tour, and a downloadable visitor guide.">
+    <title>Gallery &amp; Audio Tour | New York Tourism</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="site-shell">
+        <header class="site-header">
+            <h1 class="brand-title">New York</h1>
+            <p class="brand-tagline">A Land of Dreams and Opportunities</p>
+        </header>
+
+        <nav class="navbar navbar-expand-md site-nav" aria-label="Main navigation">
+            <div class="container-fluid px-0">
+                <a class="navbar-brand" href="index.html">NYC TOURISM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteMenu" aria-controls="siteMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="siteMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="places.html">Famous Places</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Gallery &amp; Audio Tour</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="site-main">
+            <div class="row g-4 g-lg-5">
+                <section class="col-lg-8" aria-labelledby="gallery-title">
+                    <p class="eyebrow">See &amp; hear the city</p>
+                    <h2 class="page-title" id="gallery-title">New York image gallery</h2>
+                    <p class="lead-copy">Take a visual tour of the city, then listen to a short introduction to some of its best-known sights.</p>
+
+                    <!-- Bootstrap carousel: use the indicators or Previous and Next controls. -->
+                    <div id="newYorkCarousel" class="carousel slide gallery-carousel" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/images (5).jpg" class="d-block" alt="Brooklyn Bridge and the Manhattan skyline at sunset">
+                                <div class="carousel-caption"><h2>Brooklyn Bridge at Sunset</h2></div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/images (2).jpg" class="d-block" alt="The colorful lights of Times Square">
+                                <div class="carousel-caption"><h2>Bright Lights of Times Square</h2></div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/images (3).jpg" class="d-block" alt="Central Park surrounded by Manhattan buildings">
+                                <div class="carousel-caption"><h2>Green Space in Central Park</h2></div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/images (4).jpg" class="d-block" alt="Empire State Building rising above Manhattan">
+                                <div class="carousel-caption"><h2>Empire State Building</h2></div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/images (6).jpg" class="d-block" alt="One World Trade Center rises above Lower Manhattan">
+                                <div class="carousel-caption"><h2>One World Trade Center</h2></div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#newYorkCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#newYorkCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                   <section class="resource-card" id="audio-tour">
+    <h3 class="sidebar-title">Audio Tour: The High Line &amp; NYC Sights</h3>
+    <p><strong>Featured Audio Story:</strong> <em>"The last train to ever rumble over these tracks pulled just three carloads of frozen turkeys in 1980..."</em></p>
+    <audio controls preload="metadata" class="w-100 mb-3">
+        <source src="asset/new_york_city.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+</section>
+
+                    <section class="resource-card" id="brochure">
+                        <h3 class="sidebar-title">Visitor brochure</h3>
+                        <p>Keep a compact guide to New York's featured sights for your trip.</p>
+                        <a class="btn-tour" href="asset/new-york-guide.pdf" target="_blank" rel="noopener">View brochure</a>
+                        <a class="btn-tour" href="asset/new-york-guide.pdf" download>Download brochure</a>
+                    </section>
+                </section>
+
+                <aside class="col-lg-4" aria-label="Gallery resources">
+                    <section class="sidebar-card">
+                        <h2 class="sidebar-title">Explore more</h2>
+                        <ul class="sidebar-links">
+                            <li><a href="index.html">Back to Home</a></li>
+                            <li><a href="places.html">See famous places</a></li>
+                            <li><a href="#audio-tour">Listen to the audio tour</a></li>
+                            <li><a href="#brochure">View or download the brochure</a></li>
+                        </ul>
+                    </section>
+                    <section class="sidebar-card">
+                        <h2 class="sidebar-title">In the photo gallery</h2>
+                        <a class="sidebar-photo-link" href="#newYorkCarousel" data-bs-target="#newYorkCarousel" data-bs-slide-to="1">
+                            <img src="images/images (2).jpg" alt="Times Square">
+                            <span>Times Square after dark</span>
+                        </a>
+                    </section>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 New York Tourism. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
