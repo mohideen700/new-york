@@ -34,24 +34,8 @@
         </nav>
 
         <main class="site-main">
-            <div class="row g-4 g-lg-5">
-                <section class="col-lg-8" aria-labelledby="welcome-title">
-                    <p class="eyebrow">Explore the city</p>
-                    <h2 class="page-title" id="welcome-title">The city that never sleeps</h2>
-                    <p class="lead-copy">From bright Broadway lights to peaceful park paths, New York City brings together iconic sights, culture, food, and stories from around the world.</p>
-                    <img class="hero-photo" src="images/images.jpg" alt="The Statue of Liberty overlooking New York Harbor">
-                    <p>Start your visit in Manhattan, where world-famous landmarks sit alongside neighborhood cafés, museums, and lively streets. Take in harbor views, wander through Central Park, and discover something new in every borough.</p>
-                    <h3 class="section-heading">A few must-see attractions</h3>
-                    <ol class="attraction-list">
-                        <li><a href="places.html#statue">Statue of Liberty</a> — a welcoming symbol of freedom in New York Harbor.</li>
-                        <li><a href="places.html#times-square">Times Square</a> — bright signs, theaters, and the energy of Midtown.</li>
-                        <li><a href="places.html#central-park">Central Park</a> — a green escape in the heart of Manhattan.</li>
-                        <li><a href="places.html#empire-state">Empire State Building</a> — an Art Deco icon with sweeping city views.</li>
-                        <li><a href="places.html#brooklyn-bridge">Brooklyn Bridge</a> — a memorable walk above the East River.</li>
-                    </ol>
-                </section>
-
-                <aside class="col-lg-4" aria-label="Explore more">
+            <div class="row g-4 g-lg-5 page-layout">
+                <aside class="col-md-4 col-lg-3 order-md-first" aria-label="Explore New York">
                     <section class="sidebar-card">
                         <h2 class="sidebar-title">Plan your visit</h2>
                         <ul class="sidebar-links">
@@ -62,13 +46,39 @@
                         </ul>
                     </section>
                     <section class="sidebar-card">
-                        <h2 class="sidebar-title">A city of many moods</h2>
-                        <a class="sidebar-photo-link" href="gallery.html">
-                            <img src="images/images (3).jpg" alt="Aerial view of Central Park">
-                            <span>Find a quiet moment in Central Park, then return to the city buzz.</span>
-                        </a>
+                        <h2 class="sidebar-title">Landmark photo links</h2>
+                        <ul class="sidebar-links">
+                            <li><a class="sidebar-photo-link" href="places.html#statue"><img src="images/images.jpg" alt=""><span>Statue of Liberty</span></a></li>
+                            <li><a class="sidebar-photo-link" href="places.html#times-square"><img src="images/images (2).jpg" alt=""><span>Times Square</span></a></li>
+                            <li><a class="sidebar-photo-link" href="places.html#central-park"><img src="images/images (3).jpg" alt=""><span>Central Park</span></a></li>
+                        </ul>
                     </section>
                 </aside>
+
+                <section class="col-md-8 col-lg-9 order-md-last" aria-labelledby="welcome-title">
+                    <p class="eyebrow">Explore the city</p>
+                    <h2 class="page-title" id="welcome-title">The city that never sleeps</h2>
+                    <p class="lead-copy">From bright Broadway lights to peaceful park paths, New York City brings together iconic sights, culture, food, and stories from around the world.</p>
+                    <div class="content-article-grid">
+                        <article>
+                            <figure class="content-figure">
+                                <img class="hero-photo" src="images/images.jpg" alt="The Statue of Liberty overlooking New York Harbor">
+                                <figcaption>Statue of Liberty welcomes visitors to New York Harbor.</figcaption>
+                            </figure>
+                            <p>Start your visit in Manhattan, where world-famous landmarks sit alongside neighborhood cafés, museums, and lively streets. Take in harbor views, wander through Central Park, and discover something new in every borough.</p>
+                        </article>
+                        <article>
+                            <h3 class="section-heading">A few must-see attractions</h3>
+                            <ol class="attraction-list">
+                                <li><a href="places.html#statue">Statue of Liberty</a> — a welcoming symbol of freedom in New York Harbor.</li>
+                                <li><a href="places.html#times-square">Times Square</a> — bright signs, theaters, and the energy of Midtown.</li>
+                                <li><a href="places.html#central-park">Central Park</a> — a green escape in the heart of Manhattan.</li>
+                                <li><a href="places.html#empire-state">Empire State Building</a> — an Art Deco icon with sweeping city views.</li>
+                                <li><a href="places.html#brooklyn-bridge">Brooklyn Bridge</a> — a memorable walk above the East River.</li>
+                            </ol>
+                        </article>
+                    </div>
+                </section>
             </div>
         </main>
 

@@ -33,71 +33,8 @@
         </nav>
 
         <main class="site-main">
-            <div class="row g-4 g-lg-5">
-                <section class="col-lg-8" aria-labelledby="gallery-title">
-                    <p class="eyebrow">See &amp; hear the city</p>
-                    <h2 class="page-title" id="gallery-title">New York image gallery</h2>
-                    <p class="lead-copy">Take a visual tour of the city, then listen to a short introduction to some of its best-known sights.</p>
-
-                    <!-- Bootstrap carousel: use the indicators or Previous and Next controls. -->
-                    <div id="newYorkCarousel" class="carousel slide gallery-carousel" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/images (5).jpg" class="d-block" alt="Brooklyn Bridge and the Manhattan skyline at sunset">
-                                <div class="carousel-caption"><h2>Brooklyn Bridge at Sunset</h2></div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/images (2).jpg" class="d-block" alt="The colorful lights of Times Square">
-                                <div class="carousel-caption"><h2>Bright Lights of Times Square</h2></div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/images (3).jpg" class="d-block" alt="Central Park surrounded by Manhattan buildings">
-                                <div class="carousel-caption"><h2>Green Space in Central Park</h2></div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/images (4).jpg" class="d-block" alt="Empire State Building rising above Manhattan">
-                                <div class="carousel-caption"><h2>Empire State Building</h2></div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/images (6).jpg" class="d-block" alt="One World Trade Center rises above Lower Manhattan">
-                                <div class="carousel-caption"><h2>One World Trade Center</h2></div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#newYorkCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#newYorkCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-                   <section class="resource-card" id="audio-tour">
-    <h3 class="sidebar-title">Audio Tour: The High Line &amp; NYC Sights</h3>
-    <p><strong>Featured Audio Story:</strong> <em>"The last train to ever rumble over these tracks pulled just three carloads of frozen turkeys in 1980..."</em></p>
-    <audio controls preload="metadata" class="w-100 mb-3">
-        <source src="asset/new_york_city.mp3" type="audio/mpeg">
-        Your browser does not support audio playback.
-    </audio>
-</section>
-
-                    <section class="resource-card" id="brochure">
-                        <h3 class="sidebar-title">Visitor brochure</h3>
-                        <p>Keep a compact guide to New York's featured sights for your trip.</p>
-                        <a class="btn-tour" href="asset/new-york-guide.pdf" target="_blank" rel="noopener">View brochure</a>
-                        <a class="btn-tour" href="asset/new-york-guide.pdf" download>Download brochure</a>
-                    </section>
-                </section>
-
-                <aside class="col-lg-4" aria-label="Gallery resources">
+            <div class="row g-4 g-lg-5 gallery-layout">
+                <aside class="col-md-4 col-lg-3 order-md-first" aria-label="Gallery navigation">
                     <section class="sidebar-card">
                         <h2 class="sidebar-title">Explore more</h2>
                         <ul class="sidebar-links">
@@ -108,13 +45,85 @@
                         </ul>
                     </section>
                     <section class="sidebar-card">
-                        <h2 class="sidebar-title">In the photo gallery</h2>
-                        <a class="sidebar-photo-link" href="#newYorkCarousel" data-bs-target="#newYorkCarousel" data-bs-slide-to="1">
-                            <img src="images/images (2).jpg" alt="Times Square">
-                            <span>Times Square after dark</span>
-                        </a>
+                        <h2 class="sidebar-title">Photo links</h2>
+                        <ul class="sidebar-links">
+                            <li><a class="sidebar-photo-link" href="#newYorkCarousel" data-bs-target="#newYorkCarousel" data-bs-slide-to="0"><img src="images/images (5).jpg" alt=""><span>Brooklyn Bridge</span></a></li>
+                            <li><a class="sidebar-photo-link" href="#newYorkCarousel" data-bs-target="#newYorkCarousel" data-bs-slide-to="1"><img src="images/images (2).jpg" alt=""><span>Times Square</span></a></li>
+                            <li><a class="sidebar-photo-link" href="#newYorkCarousel" data-bs-target="#newYorkCarousel" data-bs-slide-to="2"><img src="images/images (3).jpg" alt=""><span>Central Park</span></a></li>
+                            <li><a class="sidebar-photo-link" href="#newYorkCarousel" data-bs-target="#newYorkCarousel" data-bs-slide-to="3"><img src="images/images (4).jpg" alt=""><span>Empire State Building</span></a></li>
+                            <li><a class="sidebar-photo-link" href="#newYorkCarousel" data-bs-target="#newYorkCarousel" data-bs-slide-to="4"><img src="images/images (6).jpg" alt=""><span>One World Trade Center</span></a></li>
+                        </ul>
                     </section>
                 </aside>
+
+                <section class="col-md-8 col-lg-9 order-md-last" aria-labelledby="gallery-title">
+                    <p class="eyebrow">See &amp; hear the city</p>
+                    <h2 class="page-title" id="gallery-title">New York image gallery</h2>
+                    <p class="lead-copy">Take a visual tour of the city, then listen to a short introduction to some of its best-known sights.</p>
+
+                    <div class="gallery-article-grid">
+                        <article class="gallery-article" aria-label="New York photo carousel">
+                            <h3 class="sidebar-title">Photo gallery</h3>
+                            <div id="newYorkCarousel" class="carousel slide gallery-carousel" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#newYorkCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <figure class="carousel-item active">
+                                        <img src="images/images (5).jpg" class="d-block w-100" alt="Brooklyn Bridge and the Manhattan skyline at sunset">
+                                        <figcaption class="carousel-caption"><h4>Brooklyn Bridge at Sunset</h4></figcaption>
+                                    </figure>
+                                    <figure class="carousel-item">
+                                        <img src="images/images (2).jpg" class="d-block w-100" alt="The colorful lights of Times Square">
+                                        <figcaption class="carousel-caption"><h4>Bright Lights of Times Square</h4></figcaption>
+                                    </figure>
+                                    <figure class="carousel-item">
+                                        <img src="images/images (3).jpg" class="d-block w-100" alt="Central Park surrounded by Manhattan buildings">
+                                        <figcaption class="carousel-caption"><h4>Green Space in Central Park</h4></figcaption>
+                                    </figure>
+                                    <figure class="carousel-item">
+                                        <img src="images/images (4).jpg" class="d-block w-100" alt="Empire State Building rising above Manhattan">
+                                        <figcaption class="carousel-caption"><h4>Empire State Building</h4></figcaption>
+                                    </figure>
+                                    <figure class="carousel-item">
+                                        <img src="images/images (6).jpg" class="d-block w-100" alt="One World Trade Center rises above Lower Manhattan">
+                                        <figcaption class="carousel-caption"><h4>One World Trade Center</h4></figcaption>
+                                    </figure>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#newYorkCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#newYorkCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="gallery-article">
+                            <section class="resource-card" id="audio-tour">
+                                <h3 class="sidebar-title">Audio Tour: The High Line &amp; NYC Sights</h3>
+                                <p><strong>Featured Audio Story:</strong> <em>"The last train to ever rumble over these tracks pulled just three carloads of frozen turkeys in 1980..."</em> Hear how an abandoned elevated railroad became the High Line park.</p>
+                                <audio controls preload="metadata" class="w-100 mb-3">
+                                    <source src="asset/new_york_city.mp3" type="audio/mpeg">
+                                    Your browser does not support audio playback.
+                                </audio>
+                            </section>
+
+                            <section class="resource-card" id="brochure">
+                                <h3 class="sidebar-title">Visitor brochure</h3>
+                                <p>Keep a compact guide to New York's featured sights for your trip.</p>
+                                <a class="btn-tour" href="asset/new-york-guide.pdf" target="_blank" rel="noopener">View brochure</a>
+                                <a class="btn-tour" href="asset/new-york-guide.pdf" download>Download brochure</a>
+                            </section>
+                        </article>
+                    </div>
+                </section>
             </div>
         </main>
 
